@@ -5,11 +5,13 @@
   
   html, body {
     height: 100%;
-    margin: 0;
   }
 
   h1 {
     text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    margin-inline: 500px;
   }
   
   body {
@@ -21,7 +23,8 @@
     padding: 10px;
   }
   
-  nav {background-color: rgb(73, 73, 73);
+  nav {
+    background-color: rgb(73, 73, 73);
     padding: 10px 20px;
     position: sticky;
     top: 0;
