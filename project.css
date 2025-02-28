@@ -97,6 +97,44 @@ nav {background-color: rgb(73, 73, 73);
     color: #333;
 }
 
+.imge {
+  width: 230px;
+  padding: 20px;
+  padding-bottom: 160px;
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  height: auto;
+  border: 2px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  border-radius: 30px;
+
+}
+
+.imggg {
+  width: 230px;
+  padding: 20px;
+  padding-bottom: 50px;
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  height: auto;
+  border: 2px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  border-radius: 30px;
+  text-align: center;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
 footer {
   background-color: #333;
   text-align: center;
