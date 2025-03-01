@@ -4,7 +4,8 @@
 }
 
 
-nav {background-color: rgb(73, 73, 73);
+nav {
+  background-color: #a0a0a0;
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -72,7 +73,7 @@ h3 {
 }
 
 .logo{
-  color: rgb(175, 175, 175);
+  color: rgb(52, 52, 52);
   font-size: 1.5rem;
   font-weight: 700;
   font-size: 100;
@@ -80,29 +81,27 @@ h3 {
 }
 
 .logo span {
-  color: #8f8f8f;
+  color: #ffefef;
   font-weight: 700;
   font-size: x-large;
   font-style: o;
 }
 
 footer {
-  background-color: #333;
+  background-color: #a0a0a0;
+  color: #333;
   text-align: center;
-  /* padding: 20px; */
-  position: relative;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 248px;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  position: absolute;
-  padding-bottom : 10px;
-  /* margin-right: 10px; */
-  color: white;
-  margin-right: 10px;
+
 }
 
-footer {
-  max-width: 100%;
-  margin: 0 auto;
+footer p {
+  margin: 10px 0;
 }
 
 .skill-bar {

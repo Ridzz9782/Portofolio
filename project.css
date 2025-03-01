@@ -7,10 +7,12 @@
 h1 {
   text-align: center;
 }
-nav {background-color: rgb(73, 73, 73);
+nav {
+  background-color: #a0a0a0;
   padding: 10px 20px;
   position: sticky;
   top: 0;
+  padding-top: 12px;
 }
 
 .nav-container {
@@ -33,6 +35,7 @@ nav {background-color: rgb(73, 73, 73);
   font-weight: 600;
   transition: color 0.3s ease, border 0.3s ease , background-color 0.3s ease; 
   padding: 5px 10px;  
+  padding-top: 8px;
   border-radius: 999px;
 }
 
@@ -44,19 +47,20 @@ nav {background-color: rgb(73, 73, 73);
   padding: 15px;
 }
 
-.logo{
-  color: rgb(175, 175, 175);
+.logo {
+  color: rgb(52, 52, 52);
   font-size: 1.5rem;
   font-weight: 700;
-  font-size: 100;
   font-style: oblique;
 }
 
 .logo span {
-  color: #8f8f8f;
+  color: #ffffff;
   font-weight: 700;
   font-size: x-large;
+  font-style: oblique;
 }
+
 
 .gm {
   display: flex;
@@ -135,19 +139,28 @@ img:hover {
   transform: scale(1.1);
 }
 
-footer {
-  background-color: #333;
-  text-align: center;
-  /* padding: 20px; */
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
-  /* margin-right: 10px; */
-  color: #ffffff;
+.gn {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+    margin-bottom: 200px;
+  
 }
 
 footer {
-  max-width: 100%;
-  margin: 0 auto;
+  background-color: #a0a0a0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 248px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+footer p {
+  margin: 10px 0;
 }
