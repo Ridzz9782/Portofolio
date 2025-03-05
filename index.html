@@ -3,44 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marzuqie Ridwanussalam</title>
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="font/Montserrat,Roboto/Montserrat/Montserrat-Italic-VariableFont_wght.ttf">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="nav-container">
-        <div class="logo">M<span>R</span></div>
-        <ul class="nav-links">
-            <li><a href="Keahlian.html">Keahlian</a></li>
-            <li><a href="Contact.html">Contact Saya</a></li>
-            <li><a href="project.html">Project Saya</a></li>
-        </ul>
-    </div>
-    </nav>
-  </header>
-  <main>
-  <aside><img class="prof"  src="img/pp.jpg" alt=""></aside>
-  <div id="article">
-  <article class="art">
-  <h2> Tentang Saya</h2>
-Halo! <br>
-Perkenalkan, saya Marzuqie Ridwanussalam, seorang siswa SMK WIKRAMA BOGOR dengan minat besar di bidang Pemngembangan Perangkat Lunak dan Gim.
-<br>
-Saya baru memiliki pengalaman selama 1 Tahun dalam mengerjakan berbagai proyek, mulai dari  jenis proyek, seperti: membuat flowchart di web, portofolio dengan . Keahlian dan dedikasi saya telah membantu klien serta tim mencapai hasil yang optimal dan memuaskan.
-  </article>
-  <article>
-    <h2>Visi & Tujuan</h2>
-Saya percaya bahwa [nilai inti Anda, misalnya "setiap desain atau karya yang baik mampu menyampaikan cerita dan menciptakan dampak positif"]. Dengan semangat belajar dan inovasi, saya selalu berusaha memberikan hasil terbaik pada setiap proyek yang saya kerjakan.
-
-Melalui portofolio ini, saya berharap dapat berkolaborasi dengan individu, tim, atau perusahaan yang memiliki visi serupa untuk menciptakan karya yang berarti dan berkelanjutan.
-  </article>
-</div>
-</main>
+    <h1>Selamat Datang Di Portofolio Saya</h1>
+    <a href="utama.html">
+    <button onclick="createDrop(event)">Go!</button>
+    </a>
 </body>
-<footer>
-  <p>&copy; <strong>2024 Marzuqie Ridwanussalam. Semua hak dilindungi.</strong></p>
-</footer>
+<script>
+  function createDrop(event) {
+      const button = event.target;
+      const drop = document.createElement('div');
+      drop.classList.add('drop');
+
+      // Tentukan posisi awal tetesan air
+      const rect = button.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+
+      drop.style.left = `${x}px`;
+      drop.style.top = `${y}px`;
+
+      // Tambahkan tetesan ke dalam tombol
+      button.appendChild(drop);
+
+      // Hapus elemen tetesan setelah animasi selesai
+      drop.addEventListener('animationend', () => {
+          drop.remove(); });
+        }
+      </script>
 </html>
