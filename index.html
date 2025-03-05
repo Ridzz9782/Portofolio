@@ -7,31 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Selamat Datang Di Portofolio Saya</h1>
-    <a href="utama.html">
-    <button onclick="createDrop(event)">Go!</button>
-    </a>
+  <div class="container">
+    <h1>Selamat Datang di Portofolio Pertama</h1>
+    <a href="utama.html" class="transition-link">Ke Halaman Berikutnya</a>
+</div>
 </body>
 <script>
-  function createDrop(event) {
-      const button = event.target;
-      const drop = document.createElement('div');
-      drop.classList.add('drop');
 
-      // Tentukan posisi awal tetesan air
-      const rect = button.getBoundingClientRect();
-      const x = event.clientX - rect.left;
-      const y = event.clientY - rect.top;
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.transition-link');
 
-      drop.style.left = `${x}px`;
-      drop.style.top = `${y}px`;
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetUrl = this.href;
 
-      // Tambahkan tetesan ke dalam tombol
-      button.appendChild(drop);
 
-      // Hapus elemen tetesan setelah animasi selesai
-      drop.addEventListener('animationend', () => {
-          drop.remove(); });
-        }
+            document.body.style.opacity = '0';
+
+
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 500);
+        });
+    });
+  });
       </script>
 </html>
