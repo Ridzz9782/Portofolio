@@ -14,24 +14,10 @@ nav {
   position: sticky;
   top: 0;
   padding-top: 12px;
-  animation: slide 2s ;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-}
-40% {
-    transform: translateX(-80px);
-    opacity: 1;
-}
-100% {
-    transform: translateX(0px);
-    opacity: 1;
-}
 
-}
+
 
 .nav-container {
   display: flex;
@@ -175,22 +161,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  animation: slides 2s ;
-}
-
-@keyframes slides {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-}
-40% {
-    transform: translateX(80px);
-    opacity: 1;
-}
-100% {
-    transform: translateX(0px);
-    opacity: 1;
-}
 }
 
 footer p {
